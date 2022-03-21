@@ -1,0 +1,28 @@
+loans {
+	padding: 30px;
+	background-color: #6b3271;
+	margin: 20px auto;
+	border-radius: 25px;
+	color:white;
+	width: 80%;
+}
+.email{
+	text-align: center;
+	padding: 20px;
+	color: #6b3271;
+	background-color: #b28ab6;
+	border-radius: 20px 20px 60px 60px;
+	width: 60%;
+	margin: 20px auto;
+}
+.db{
+	margin-bottom: 60px;
+}
+.db a{
+	 color:white;	
+	 font-size: 1.2em;
+}
+.db a:hover{
+	color:#b28ab6;	
+	
+}

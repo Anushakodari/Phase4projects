@@ -1,0 +1,71 @@
+<div class="container db">
+    <div class="email">
+        <h1>Loans By : {{this.ls.getEmail()}}</h1>
+    </div>
+    <div *ngIf="loans.length<=0">
+        <p>No Loan applied Yet</p>
+        <p>Click here to apply for loans
+            <a href="#">Apply</a>
+        </p>
+    </div>
+    <div class='container'>
+        <div *ngFor="let loan of loans">
+            <div class='loans'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <h3 class="text-center">Loan Id : {{loan.loanId }}</h3>
+                    </div>
+                </div>
+                <div class='row'></div>
+                <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Loan Type:</div>
+                    <div class='col-md-4'>{{loan.loanType}}</div>
+                </div>
+                <div class="row text-right">
+                    <div class='col-md-12'>
+                        <p><a routerLink='{{loan.loanId}}'>Details</a></p>
+                    </div>
+                </div>
+                <!-- <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Loan Amount :</div>
+                    <div class='col-md-4'>{{loan.loanAmount }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Interest Rate :</div>
+                    <div class='col-md-4'>{{loan.interestRate }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Loan Period:</div>
+                    <div class='col-md-4'>{{loan.period }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Employee Id Assigned:</div>
+                    <div class='col-md-4'>{{loan.employeeId }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Collaterals : </div>
+                    <div class='col-md-4'>
+                        <div *ngFor="let coll of loan.collaterals">
+                            <div>{{coll.collateralType | uppercase}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Remarks: </div>
+                    <div class='col-md-4'>{{loan.remarks }}</div>
+                </div>
+                <div class='row text-right'>
+                    <div class='col-md-3'></div>
+                    <div class='col-md-3'>Approved :</div>
+                    <div class="col-md-4"> <span [innerText]='loan.approved'></span></div>
+                </div> -->
+            </div>
+        </div>
+    </div>
